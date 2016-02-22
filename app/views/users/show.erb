@@ -1,3 +1,12 @@
+<h1> hello </h1>
 
-<!-- 
-To put on the nav bar ?  -->
+
+
+<div class="allfiles">
+<h2> All folders </h2>
+<% @folders.each do |folder| %>
+  <a href="/folders/<%= folder.id %>">
+    <%= folder.title %>
+    <% end %>
+  </a>
+</div>
