@@ -1,7 +1,7 @@
 #Index
 
-get '/folder' do
-  @foler = Folder.all
+get '/users/:id' do
+  @folder = Folder.all
   erb :'folders/index'
 end
 
@@ -12,12 +12,12 @@ get '/folder/new' do
 end
 
 #Create
-post '/folder' do
+post '/users/:id' do
   @folder = Folder.new(params[:folder])
   if @folder.save
-    redirect "/folders"
+    redirect "/users/:id"
   else
-    erb :'folder/new'
+    erb :'folders/new'
   end
 end
 

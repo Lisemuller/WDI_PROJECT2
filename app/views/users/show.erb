@@ -1,12 +1,11 @@
 <h1> hello </h1>
 
-
+<a href="/folder/new">Create a new folder</a>
 
 <div class="allfiles">
 <h2> All folders </h2>
-<% @folders.each do |folder| %>
-  <a href="/folders/<%= folder.id %>">
-    <%= folder.title %>
+<% @user.folders.each do |folder| %>
+  
+    <%= user.folder.title %>
     <% end %>
-  </a>
 </div>
