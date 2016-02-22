@@ -1,18 +1,20 @@
 <h1> hello </h1>
 
 <form class="pure-form pure-form-aligned" method="post" action="/login">
-    <fieldset>
-        <div class="pure-control-group">
-            <label for="name">Username</label>
-            <input id="name" type="text" placeholder="Username" name="user[username]">
-        </div>
+  <fieldset>
+    <div class="pure-control-group">
+      <label for="name">Username</label>
+      <input id="name" type="text" placeholder="Username" name="user[username]">
+    </div>
 
-        <div class="pure-control-group">
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password" name="user[password]">
-        </div>
+    <div class="pure-control-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Password" name="user[password]">
+    </div>
+ 
+    <button type="submit" class="pure-button pure-button-primary"><li><a href="/login">Login</a></li></button>
 
-            <button type="submit" class="pure-button pure-button-primary">Submit</button>
-        </div>
-    </fieldset>
+    <p> Not registered yet ? </p>
+    <li><a href="/register">Register</a></li>
+  </fieldset>
 </form>
