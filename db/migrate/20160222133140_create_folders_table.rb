@@ -1,6 +1,6 @@
 class CreateFoldersTable < ActiveRecord::Migration
   def change
-    create_table :title do |t|
+    create_table :folders do |t|
       t.string :title
       t.string :image 
       end
