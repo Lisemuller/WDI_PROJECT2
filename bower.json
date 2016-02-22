@@ -1,0 +1,18 @@
+{
+  "name": "WDI_PROJECT2",
+  "authors": [
+    "Lise Muller <lisemuller@hotmail.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
