@@ -1,47 +1,60 @@
 #Index
 
-get '/users/:id' do
-  @folder = Folder.all
+get '/folders' do
+  authorize!
+  @folders = current_user.folders
   erb :'folders/index'
 end
 
 #New
-get '/folder/new' do
+get '/folders/new' do
+  authorize!
   @folder = Folder.new
   erb :'folders/new'
 end
 
 #Create
-post '/users/:id' do
+post '/folders' do
+  authorize!
   @folder = Folder.new(params[:folder])
   if @folder.save
-    redirect "/users/:id"
+    @folder.users << current_user if !@folder.users.include? current_user
+    redirect "/folders/#{@folder.id}"
   else
     erb :'folders/new'
   end
 end
 
 #Show
-get '/folder/:id' do
+get '/folders/:id' do
+  authorize!
   @folder = Folder.find(params[:id])
-  if @folder
+  if @folder.users.include? current_user
     erb :'folders/show'
   else
-    redirect "/folder"
+    redirect "/folders"
   end
 end
 
 # EDIT
 get "/folders/:id/edit" do
+  authorize!
   @folder = Folder.find(params[:id])
-  erb :"folders/edit"
+
+  if @folder.users.include? current_user
+    erb :"folders/edit"
+  else
+    redirect "/folders"
+  end
 end
 
 # UPDATE
 put '/folders/:id' do
+  authorize!
   @folder = Folder.find(params[:id])
-  if @folder.update(params[:folder])
-    redirect "/folder/#{@folder.id}"
+
+  if @folder.users.include? current_user && @folder.update(params[:folder])
+    redirect "/folders/#{@folder.id}"
   else
     erb :"folders/show"
   end

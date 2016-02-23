@@ -13,14 +13,21 @@
                 <a class="pure-menu-heading" href="">Photo Gallery</a>
 
                 <ul class="pure-menu-list">
-                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Users</a></li>
-                    <li class="pure-menu-item"><a href="/logout" class="pure-menu-link">Logout</a></li>
+                    <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="/users" class="pure-menu-link">Users</a></li>
+                    <% if is_logged_in? %>
+                      <li class="pure-menu-item"><a href="/users/<%=current_user.id %>" class="pure-menu-link"><%= @current_user.username %></a></li>
+                      <li class="pure-menu-item"><a href="/logout" class="pure-menu-link">Logout</a></li>
+                    <% else %>
+                      <li class="pure-menu-item"><a href="/login" class="pure-menu-link">Login</a></li>
+                    <% end %>
                 </ul>
             </div>
         </div>
     </div>
   </header>
-<%= yield %>
+  <main>
+    <%= yield %>
+  </main>
 </body>
 </html>          
