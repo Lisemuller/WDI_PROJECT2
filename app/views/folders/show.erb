@@ -6,3 +6,11 @@
 <% end %>
 
 <!-- rajouter les links  -->
+
+<div class="addlink">
+<h1><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h1>
+</div>
+
+<% @folder.links.each do |link| %>
+  <%= link.url %>
+<% end %> 
