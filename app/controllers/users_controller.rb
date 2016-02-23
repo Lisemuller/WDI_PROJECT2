@@ -42,9 +42,9 @@ end
 get "/users/:id/edit" do
   authorize!
 
-  if params[:id] != current_user.id
-    redirect '/login'
-  end
+  # if params[:id] != current_user.id
+  #   redirect '/login'
+  # end
 
   @user = current_user
   erb :"users/edit"
