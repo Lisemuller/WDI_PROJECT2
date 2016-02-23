@@ -8,6 +8,7 @@
 <h1><a href="/folders/new">add a folder</a></h1>
 </div>
 
-<% @folders.each do |folder| %>
+<a href="/links/index"><% @folders.each do |folder| %>
   <h2><%= folder.title %></h2>
 <% end %>
+</a>
