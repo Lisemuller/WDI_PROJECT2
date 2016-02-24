@@ -16,10 +16,11 @@ end
 #Create
 post '/folders' do
   authorize!
+  @user = current_user
   @folder = Folder.new(params[:folder])
   if @folder.save
     @folder.users << current_user if !@folder.users.include? current_user
-    redirect "/folders/#{@folder.id}"
+    redirect "/users/#{@user.id}"
   else
     erb :'folders/new'
   end

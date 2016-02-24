@@ -1,8 +1,5 @@
-.thumbnail { width: 250px; height: 250px; border: solid 1px black; }
+.thumbnail { width: 250px; height: 150px; border: solid 1px black; }
 .thumbnail img { max-width: 100%; max-height: 100%; margin: auto; }
-
-.navbar .profilepic { width: 50px; height: 50px; margin-top: 10px; }
-.navbar .profilepic img { border-radius: 50%; max-width: 100%; max-height: 100%; margin: auto; }
 
 body { font-family: "Roboto", sans-serif; }
 

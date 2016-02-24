@@ -16,7 +16,6 @@
                 <ul class="pure-menu-list">
                     <% if is_logged_in? %>
                     <li class="pure-menu-item"><a href="/users/<%=current_user.id %>" class="pure-menu-link"><%= @current_user.username %>' Folders</a></li>
-                    <li class="pure-menu-item"><div class="profilepic"><img src="<%= @user.profile_pic %>"></div></li>
                     <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                                 <a href="/users/<%=current_user.id %>" id="menuLink1" class="pure-menu-link"><%= @current_user.username %></a>
                                 <ul class="pure-menu-children">
