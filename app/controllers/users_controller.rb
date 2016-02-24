@@ -30,6 +30,7 @@ get '/users/:id' do
 
    @user = User.find(params[:id])
    @allUsers = User.all
+   
   if @user
     erb :'users/show'
   else

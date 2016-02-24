@@ -1,11 +1,24 @@
-.thumbnail { 
-  width: 250px; 
-  height: 250px; 
-  border: solid 1px black;
+@import "variables";
+@import "partials/foldershow";
+@import "partials/homepage";
+@import "partials/usershow";
+@import "partials/navbar";
+@import "partials/footer";
+
+
+body {
+  font-family: $body-font-family;
 }
 
-.thumbnail img { 
- max-width:100%;
- max-height:100%;
- margin: auto;
-}
+
+// .thumbnail { 
+//   width: 250px; 
+//   height: 250px; 
+//   border: solid 1px black;
+//    img { 
+//      max-width:100%;
+//      max-height:100%;
+//      margin: auto;
+//     }
+// }
+

@@ -6,7 +6,7 @@
 <%= @user.username %>
 
 <h2>Edit Profile</h2>
-<form id="edit" method="post" action="/users/<%= @user.id %>" enctype="multipart/form-data">
+<form id="edit" method="post" action="/users/<%= current_user.id %>" enctype="multipart/form-data">
   <input type="hidden" name="_method" value="put">
   <div class="form-group">
     <label for="username">Username</label>
