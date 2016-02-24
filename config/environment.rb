@@ -7,10 +7,14 @@ use Sass::Plugin::Rack
 register Sinatra::AssetPack
 assets do 
   js :application, [
+    '/bower_components/jquery/dist/jquery.min.js',
+    '/bower_components/select2/dist/js/select2.full.min.js',
+    '/js/jquery.js',
     '/js/app.js'
   ]
   css :application, [
     '/bower_components/pure/pure-min.css',
+    '/bower_components/select2/dist/css/select2.min.css',
     '/stylesheets/style.css'
   ]
   js_compression :jsmin 
