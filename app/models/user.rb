@@ -15,5 +15,5 @@ class User < ActiveRecord::Base
     association_foreign_key: "friend_id",
     class_name: "User"
   )
-  mount_uploader :image, ProfilePicUploader
+  mount_uploader :profile_pic, ProfilePicUploader
 end

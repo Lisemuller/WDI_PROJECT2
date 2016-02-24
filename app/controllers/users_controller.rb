@@ -29,8 +29,7 @@ get '/users/:id' do
   # end
 
    @user = User.find(params[:id])
-   @folders = @user.folders
-    puts "============================================= #{@folders}"
+   @allUsers = User.all
   if @user
     erb :'users/show'
   else
@@ -54,9 +53,9 @@ end
 put '/users/:id' do
   authorize!
 
-  if params[:id] != current_user.id
-    redirect '/login'
-  end
+  # if params[:id] != current_user.id
+  #   redirect '/login'
+  # end
 
   @user = current_user
   if @user.update(params[:user])

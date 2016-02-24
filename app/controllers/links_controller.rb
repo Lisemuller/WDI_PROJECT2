@@ -16,7 +16,7 @@ post '/links' do
   @link = Link.new(params[:link])
   if @link.save
     
-    redirect "/links"
+    redirect "/folders/#{@link.folder_id}"
   else
     erb :'links/new'
   end

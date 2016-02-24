@@ -1,0 +1,11 @@
+.thumbnail { 
+  width: 250px; 
+  height: 250px; 
+  border: solid 1px black;
+}
+
+.thumbnail img { 
+ max-width:100%;
+ max-height:100%;
+ margin: auto;
+}

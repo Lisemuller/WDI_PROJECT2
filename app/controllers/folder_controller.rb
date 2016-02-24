@@ -25,6 +25,13 @@ post '/folders' do
   end
 end
 
+post '/folders/:id/add_friend' do
+  @folder = Folder.find(params[:id])
+  @user = User.find(params[:user_id])
+  @folder.users << @user
+  redirect "/folders/#{@folder.id}"
+end
+
 #Show
 get '/folders/:id' do
   authorize!

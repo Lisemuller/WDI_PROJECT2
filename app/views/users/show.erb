@@ -1,17 +1,34 @@
-<h1>Users Show</h1>
-
-
 <%= @user.username %>
 
 
+  <div class="thumbnail">
+    <img  src="<%= @user.profile_pic %>">
+  </div>
+
+  <div class="thumbnail">
+    <h1><a href="/folders/new">add a folder</a></h1>
+  </div>
 
 
+  <% if @user.folders.count > 0 %>
+   <% @user.folders.each do |folder| %>
+     <div class="thumbnail">
+      <a href="/folders/<%= folder.id %>"><h2><%= folder.title %></h2></a>
 
-<div class="addfile">
-<h1><a href="/folders/new">add a folder</a></h1>
-</div>
-
-<% @folders.each do |folder| %>
-  <a href="/folders/<%= folder.id %>"><h2><%= folder.title %></h2></a>
+      <form method="post" action="/folders/<%= folder.id %>/add_friend">
+        <h2> Share </h2>
+          <div class="friend">
+            <select name="user_id" id="friend">
+              <% @allUsers.each do |user| %>
+                <option value="<%=user.id%>"><%= user.username %></option>
+              <% end %>
+            </select>
+          </div>
+           <input type="submit" value="send">
+        </form>
+  </div>
+  <% end %>
 <% end %>
+
+
 
