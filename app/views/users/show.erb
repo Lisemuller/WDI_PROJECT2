@@ -1,41 +1,38 @@
 <%= @user.username %>
 
 
-  <div class="thumbnail">
+  <div class="thumbnailbig">
     <img  src="<%= @user.profile_pic %>">
   </div>
 
-  <div class=”row”>
-    <ul>
-      <li class=”col-lg-3 col-md-4 col-sm-6”>
-        <div class="thumbnail">
-          <h1><a href="/folders/new">add a folder</a></h1>
-        </div>
-
-          <% if @user.folders.count > 0 %>
-           <% @user.folders.each do |folder| %>
-             <ul class=”tile”>
-               <div class="thumbnail">
-                <a href="/folders/<%= folder.id %>"><h2><%= folder.title %></h2></a>
-                  <form method="post" action="/folders/<%= folder.id %>/add_friend">
-                    <h2> Share </h2>
-                      <div class="friend">
-                        <select name="user_id" id="friend">
-                          <% @allUsers.each do |user| %>
-                            <option value="<%=user.id%>"><%= user.username %></option>
-                          <% end %>
-                        </select>
-                      </div>
-                       <input type="submit" value="send">
-                    </form>
-                   </div>
+<!--   <div class=”row”> -->
+    <div class="pure-g">
+          <div class="pure-u-1-6"> 
+              <div class="thumbnail" class="new">
+                <h1><a href="/folders/new">add a folder</a></h1>
+              </div>
+            </div>
+            <% if @user.folders.count > 0 %>
+             <% @user.folders.each do |folder| %>
+              <div class="pure-u-1-6"> 
+                 <div class="thumbnail">
+                  <a href="/folders/<%= folder.id %>"><h2><%= folder.title %></h2></a>
+                    <form method="post" action="/folders/<%= folder.id %>/add_friend">
+                      <h2> Share </h2>
+                        <div class="friend">
+                          <select name="user_id" id="friend">
+                            <% @allUsers.each do |user| %>
+                              <option value="<%=user.id%>"><%= user.username %></option>
+                            <% end %>
+                          </select>
+                        </div>
+                         <input type="submit" value="send">
+                      </form>
+                     </div>
+                  </div>
+                <% end %>
               <% end %>
-            <% end %>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-
+      </div>
+<!--     </div> -->
 
 

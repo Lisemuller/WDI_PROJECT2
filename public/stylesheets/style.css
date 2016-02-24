@@ -1,5 +1,8 @@
-.thumbnail { width: 250px; height: 150px; border: solid 1px black; }
-.thumbnail img { max-width: 100%; max-height: 100%; margin: auto; }
+.thumbnailbig { width: 250px; height: 150px; }
+.thumbnailbig img { max-width: 100%; max-height: 100%; margin: auto; }
+
+.thumbnail { border: solid 1px black; margin: 10px; }
+.thumbnail .new { height: 168px; }
 
 body { font-family: "Roboto", sans-serif; }
 
