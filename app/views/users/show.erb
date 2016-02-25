@@ -12,7 +12,8 @@
              <% @user.folders.each do |folder| %>
               <div class="pure-u-1-6"> 
                  <div class="thumbnail">
-                  <a href="/folders/<%= folder.id %>"><h2><%= folder.title %></h2></a>
+                 <div class="colorstyle" style="background-color:<%= colors[folder.id%15] %>"></div>
+                  <span><a href="/folders/<%= folder.id %>"><%= folder.title %></a></span>
                     <form method="post" action="/folders/<%= folder.id %>/add_friend">
                       <h2> Share </h2>
                         <div class="friend">

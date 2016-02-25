@@ -23,7 +23,7 @@
                                 </ul>
                             </li>
                           </ul>
-                          <header>
+                          <header<% if @folder %> style="background-color:<%= colors[@folder.id%15] %>"<%end%>>
                               <div class="thumbnailbig" style="background-image: url(<%= @current_user.profile_pic %>); background-size: cover;">
                                 </div>
                           </header>

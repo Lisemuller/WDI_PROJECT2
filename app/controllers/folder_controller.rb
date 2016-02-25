@@ -1,5 +1,6 @@
 #Index
 
+
 get '/folders' do
   authorize!
   @folders = current_user.folders

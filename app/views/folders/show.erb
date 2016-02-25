@@ -1,18 +1,24 @@
 <!-- on folders page/ index  -->
-<h2><%= @folder.title %></h2>
-
-<% @folder.users.each do |user| %>
-  <%= user.username %>
-<% end %>
 
 <!-- rajouter les links  -->
-
-<div class="addlink">
-<h1><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h1>
+<div class="listlink">
+  <section class="post">
+      <h2 class="post-title"><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h2>
+  </section>
+  <h1 class="content-subhead">All the Links</h1>
+  <% @folder.links.each do |link| %>
+    <div class="post">
+      <section class="post">
+        <header class="post-header">
+          <h2 class="post-title">Link Title</h2>
+          <p class="link">Link description</p>
+          <p class="link"><%= link.url %></p>
+        </header>
+      </section>
+    </div>
+  <% end %> 
 </div>
 
-<% @folder.links.each do |link| %>
-  <%= link.url %>
-<% end %> 
 
+    
 

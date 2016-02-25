@@ -1,12 +1,23 @@
+.content-subhead { text-transform: uppercase; color: #aaa; border-bottom: 1px solid #eee; padding: 0.4em 0; font-size: 80%; font-weight: 500; letter-spacing: 0.1em; }
+
+.post-header { padding-bottom: 24px; }
+
+h2 { display: block; font-weight: bold; }
+
+.listlink { margin-top: 70px; margin-left: 150px; margin-right: 150px; }
+
 .pure-g { margin-top: 70px; margin-left: 50px; margin-right: 50px; }
 
 .thumbnail { border: solid 1px black; margin: 10px; height: 168px; }
+.thumbnail span { color: #000; font-weight: bold; display: block; margin-top: 0.41666666666666663em; margin-left: 9px; }
+
+.colorstyle { width: 11.3em; height: 8.333333333333332em; margin-top: 5px; margin-left: 9px; }
 
 .thumbnailnew { margin: 10px; height: 168px; background-image: url("/images/noun_40980_cc.jpg"); background-size: cover; }
 
 header { height: 100px; width: 100%; border-bottom: solid 1px grey; }
 
-.thumbnailbig { height: 150px; width: 150px; border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; margin: auto; }
+.thumbnailbig { position: relative; z-index: 1; height: 150px; width: 150px; border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; margin: auto; }
 
 body { font-family: "Roboto", sans-serif; }
 
