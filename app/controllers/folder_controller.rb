@@ -27,7 +27,7 @@ post '/folders' do
   end
 end
 
-post '/folders/add_friend' do
+post '/folders/:id/add_friend' do
   @folder = Folder.find(params[:id])
   @user = User.find(params[:user_id])
   @folder.users << @user
@@ -37,8 +37,8 @@ end
 #Show
 get '/folders/:id' do
   authorize!
-  @allUsers = User.all
   @folder = Folder.find(params[:id])
+  @allUsers = User.all
   if @folder.users.include? current_user
     erb :'folders/show'
   else

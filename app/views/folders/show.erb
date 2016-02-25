@@ -5,7 +5,7 @@
   <section class="post">
       <h2 class="post-title"><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h2>
       <div class="friend-form">
-      <form method="post" action="/folders/add_friend">
+      <form method="post" action="/folders/<%= @folder.id %>/add_friend">
           <div class="friend">
             <select name="user_id" class="friend-select">
               <% @allUsers.each do |user| %>
