@@ -7,9 +7,8 @@ use Sass::Plugin::Rack
 register Sinatra::AssetPack
 assets do 
   js :application, [
-    '/bower_components/jquery/dist/jquery.min.js',
-    '/bower_components/select2/dist/js/select2.full.min.js',
     '/js/jquery.js',
+    '/bower_components/select2/dist/js/select2.full.min.js',
     '/js/app.js'
   ]
   css :application, [
