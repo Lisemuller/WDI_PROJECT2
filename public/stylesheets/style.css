@@ -1,27 +1,90 @@
-.content-subhead { text-transform: uppercase; color: #aaa; border-bottom: 1px solid #eee; padding: 0.4em 0; font-size: 80%; font-weight: 500; letter-spacing: 0.1em; }
+/*
+Error: File to import not found or unreadable: partials/forms.
+       Load path: /Users/lise/development/WDI_PROJECT2/public/stylesheets/sass
+        on line 8 of ./public/stylesheets/sass/style.scss
 
-.post-header { padding-bottom: 24px; }
+3: @import "partials/homepage";
+4: @import "partials/usershow";
+5: @import "partials/navbar";
+6: @import "partials/footer";
+7: @import "partials/header";
+8: @import "partials/forms";
+9: 
+10: 
+11: 
+12: body {
+13:   font-family: $body-font-family;
 
-h2 { display: block; font-weight: bold; }
-
-.listlink { position: relative; margin-top: 70px; margin-left: 150px; margin-right: 150px; }
-.listlink .friend-folder { position: absolute; top: 5px; right: 10px; }
-
-.pure-g { margin-top: 70px; margin-left: 50px; margin-right: 50px; }
-
-.thumbnail { border: solid 1px black; margin: 10px; height: 168px; }
-.thumbnail span { color: #000; font-weight: bold; display: block; margin-top: 0.41666666666666663em; margin-left: 9px; }
-
-.colorstyle { width: 11.3em; height: 8.333333333333332em; margin-top: 5px; margin-left: 9px; }
-
-.thumbnailnew { margin: 10px; height: 168px; background-image: url("/images/noun_40980_cc.jpg"); background-size: cover; }
-
-.friend { position: absolute; top: 5px; right: 10px; }
-
-header { height: 100px; width: 100%; border-bottom: solid 1px grey; }
-
-.thumbnailbig { position: relative; z-index: 1; height: 150px; width: 150px; border: 4px solid rgba(255, 255, 255, 0.3); border-radius: 50%; margin: auto; }
-
-body { font-family: "Roboto", sans-serif; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+./public/stylesheets/sass/style.scss:8
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/rack.rb:51:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/logger.rb:15:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:212:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/show_exceptions.rb:25:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:219:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+/Users/lise/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: partials/forms.\A        Load path: /Users/lise/development/WDI_PROJECT2/public/stylesheets/sass\A         on line 8 of ./public/stylesheets/sass/style.scss\A \A 3: @import \"partials/homepage\";\A 4: @import \"partials/usershow\";\A 5: @import \"partials/navbar\";\A 6: @import \"partials/footer\";\A 7: @import \"partials/header\";\A 8: @import \"partials/forms\";\A 9: \A 10: \A 11: \A 12: body {\A 13:   font-family: $body-font-family;"; }
