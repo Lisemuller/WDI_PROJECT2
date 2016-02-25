@@ -3,7 +3,7 @@ $(function() {
     return { id: $(option).val(), text: $(option).text() };
   });
 
-  $("#friend").select2({
+  $(".friend-select").select2({
     data: data
   });
 });

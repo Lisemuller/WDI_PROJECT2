@@ -14,10 +14,10 @@
                  <div class="thumbnail">
                  <div class="colorstyle" style="background-color:<%= colors[folder.id%15] %>"></div>
                   <span><a href="/folders/<%= folder.id %>"><%= folder.title %></a></span>
+                  <div class="friend form">
                     <form method="post" action="/folders/<%= folder.id %>/add_friend">
-                      <h2> Share </h2>
                         <div class="friend">
-                          <select name="user_id" id="friend">
+                          <select name="user_id" class="friend-select">
                             <% @allUsers.each do |user| %>
                               <option value="<%=user.id%>"><%= user.username %></option>
                             <% end %>
@@ -25,6 +25,7 @@
                         </div>
                          <input type="submit" value="send">
                       </form>
+                    </div>
                      </div>
                   </div>
                 <% end %>
