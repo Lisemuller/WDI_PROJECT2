@@ -1,16 +1,12 @@
 
 
-
-  <div class="thumbnailbig">
-    <img  src="<%= @user.profile_pic %>">
-  </div>
-
 <!--   <div class=”row”> -->
     <div class="pure-g">
           <div class="pure-u-1-6"> 
+            <a style="display:block" href="/folders/new">
               <div class="thumbnailnew">
-                <h1><a href="/folders/new">add a folder</a></h1>
               </div>
+              </a>
             </div>
             <% if @user.folders.count > 0 %>
              <% @user.folders.each do |folder| %>
