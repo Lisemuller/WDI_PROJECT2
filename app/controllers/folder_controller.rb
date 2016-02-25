@@ -27,7 +27,7 @@ post '/folders' do
   end
 end
 
-post '/folders/:id/add_friend' do
+post '/folders/:id' do
   @folder = Folder.find(params[:id])
   @user = User.find(params[:user_id])
   @folder.users << @user
