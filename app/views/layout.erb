@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="header">
+        <div class="hello">
             <div class="pure-menu pure-menu-horizontal">
                 <a class="pure-menu-heading" href="">Peek</a>
 
@@ -22,20 +22,19 @@
                                     <li class="pure-menu-item"><a href="/logout" class="pure-menu-link">Logout</a></li>
                                 </ul>
                             </li>
+                          </ul>
+                          <header>
+                              <div class="thumbnailbig" style="background-image: url(<%= @current_user.profile_pic %>); background-size: cover;">
+                                </div>
+                          </header>
                     <% else %>
+                   <ul class="pure-menu-list">
                       <li class="pure-menu-item"><a href="/login" class="pure-menu-link">Login</a></li>
                     <% end %>
                 </ul>
             </div>
         </div>
     </div>
-  <header>
-    <% if is_logged_in? %>
-      <div class="thumbnailbig" style="background-image: url(<%= @user.profile_pic %>); background-size: cover;">
-        </div>
-    <% else %>
-    <% end %>
-  </header>
   <main>
     <%= yield %>
   </main>
