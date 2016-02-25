@@ -1,0 +1,18 @@
+{
+  "name": "wdi_project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+      "bower": "1.7.x"
+    },
+    "engine": {
+      "node": "5.0.x",
+      "npm": "1.3.x"
+    },
+    "scripts": {
+      "postinstall": "./node_modules/bower/bin/bower install"
+    },
+  "author": "",
+  "license": "ISC"
+}
