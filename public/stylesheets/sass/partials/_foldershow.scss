@@ -19,8 +19,14 @@
   }
 
 .listlink {
+  position:relative;
   margin-top: 70px;
   margin-left: 150px;
   margin-right: 150px;
+    .friend-folder {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  }
 }
 

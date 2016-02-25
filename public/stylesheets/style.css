@@ -4,7 +4,8 @@
 
 h2 { display: block; font-weight: bold; }
 
-.listlink { margin-top: 70px; margin-left: 150px; margin-right: 150px; }
+.listlink { position: relative; margin-top: 70px; margin-left: 150px; margin-right: 150px; }
+.listlink .friend-folder { position: absolute; top: 5px; right: 10px; }
 
 .pure-g { margin-top: 70px; margin-left: 50px; margin-right: 50px; }
 
@@ -14,6 +15,8 @@ h2 { display: block; font-weight: bold; }
 .colorstyle { width: 11.3em; height: 8.333333333333332em; margin-top: 5px; margin-left: 9px; }
 
 .thumbnailnew { margin: 10px; height: 168px; background-image: url("/images/noun_40980_cc.jpg"); background-size: cover; }
+
+.friend { position: absolute; top: 5px; right: 10px; }
 
 header { height: 100px; width: 100%; border-bottom: solid 1px grey; }
 

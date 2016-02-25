@@ -4,6 +4,18 @@
 <div class="listlink">
   <section class="post">
       <h2 class="post-title"><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h2>
+      <div class="friend-form">
+      <form method="post" action="/folders/add_friend">
+          <div class="friend">
+            <select name="user_id" class="friend-select">
+              <% @allUsers.each do |user| %>
+                <option value="<%=user.id%>"><%= user.username %></option>
+              <% end %>
+            </select>
+           <input type="submit" value="send">
+           </div>
+        </form>
+      </div>
   </section>
   <h1 class="content-subhead">All the Links</h1>
   <% @folder.links.each do |link| %>
