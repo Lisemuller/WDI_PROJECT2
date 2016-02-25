@@ -38,3 +38,19 @@ position: absolute;
 top: 5px;
 right: 10px;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}

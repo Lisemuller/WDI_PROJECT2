@@ -1,0 +1,66 @@
+.divscreen
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:40px;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/images/imagehome.jpg");
+    background-size: cover;
+}
+
+.suscribe {
+position : relative;
+width : 400px;
+height : 400px;
+background:rgba(255,255,255,0.5);
+margin-top: 215px;
+margin-left:930px;
+.pure-control-group1{
+  position:absolute;
+  margin-left: 100px;
+  top:20%;
+}
+.pure-control-group2{
+  position:absolute;
+  margin-left: 100px;
+  top:30%;
+}
+.ola{
+  position:absolute;
+  margin-left: 100px;
+  top:45%;
+  }
+.oli{
+  position:absolute;
+  margin-left: 100px;
+  top:55%;
+}
+.ole{
+    position:absolute;
+    margin-left: 100px;
+    top:65%;
+  }
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}

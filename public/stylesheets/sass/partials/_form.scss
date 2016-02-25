@@ -1,13 +1,48 @@
 .bigform {
-      width: 100px;
-      height: 100px;
-      background-color: red;
+      width: 800px;
+      height: 600px;
+      background-color: white;
 
-      position: absolute;
+      position: relative;
       top:0;
       bottom: 0;
       left: 0;
       right: 0;
 
       margin: auto;
+
+      input {
+        position : absolute;
+        top: 40%;
+        right: 52px;
+        width: 700px;
+        height: 70px;
+      }
+
+      button {
+        position : absolute;
+        top: 60%;
+        right : 39%;
+        .button-secondary {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+      }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }

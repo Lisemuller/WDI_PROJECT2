@@ -1,20 +1,27 @@
-<h1> hello </h1>
+<div class="divscreen">
+  <div class="suscribe">
+  <form class="pure-form pure-form-aligned" method="post" action="/login">
+    <fieldset>
+      <div class="pure-control-group1">
+        <input id="name" type="text" placeholder="Username" name="user[username]" autofocus>
+      </div>
 
-<form class="pure-form pure-form-aligned" method="post" action="/login">
-  <fieldset>
-    <div class="pure-control-group">
-      <label for="name">Username</label>
-      <input id="name" type="text" placeholder="Username" name="user[username]" autofocus>
+      <div class="pure-control-group2">
+        <input id="password" type="password" placeholder="Password" name="user[password]">
+      </div>
+    
+    <div class="ola">
+      <button type="submit" class="pure-button pure-button-primary">Login</button>
     </div>
 
-    <div class="pure-control-group">
-      <label for="password">Password</label>
-      <input id="password" type="password" placeholder="Password" name="user[password]">
+    <div class="oli">
+      <p> Not registered yet ? </p>
     </div>
- 
-    <button type="submit" class="pure-button pure-button-primary">Login</button>
 
-    <p> Not registered yet ? </p>
-    <li><a href="/register">Register</a></li>
-  </fieldset>
-</form>
+    <div class="ole">
+      <button class="pure-button pure-button-primary"><a href="/register" style="color:white;">Register</a></button>
+    </div>
+    </fieldset>
+  </form>
+  </div>
+</div>
