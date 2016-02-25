@@ -2,7 +2,10 @@
 .thumbnailbig img { max-width: 100%; max-height: 100%; margin: auto; }
 
 .thumbnail { border: solid 1px black; margin: 10px; }
-.thumbnail .new { height: 168px; }
+
+.thumbnailnew { border: solid 1px black; margin: 10px; height: 168px; }
+
+.head { width: 1025px; height: 250px; background-color: red; }
 
 body { font-family: "Roboto", sans-serif; }
 

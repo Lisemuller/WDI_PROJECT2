@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,aAAc,GACZ,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK;AACZ,iBAAI,GACF,SAAS,EAAC,IAAI,EACd,UAAU,EAAC,IAAI,EACf,MAAM,EAAE,IAAI;;AAMjB,UAAW,GACT,MAAM,EAAE,eAAe,EACvB,MAAM,EAAE,IAAI;AACZ,eAAK,GACH,MAAM,EAAE,KAAK;;ACRjB,IAAK,GACH,WAAW,ECTM,oBAAoB",
-"sources": ["sass/partials/_usershow.scss","sass/style.scss","sass/_variables.scss"],
+"mappings": "AAAA,aAAc,GACZ,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,KAAK;AACZ,iBAAI,GACF,SAAS,EAAC,IAAI,EACd,UAAU,EAAC,IAAI,EACf,MAAM,EAAE,IAAI;;AAIjB,UAAU,GACR,MAAM,EAAE,eAAe,EACvB,MAAM,EAAE,IAAI;;AAGd,aAAc,GACZ,MAAM,EAAE,eAAe,EACvB,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,KAAK;;AClBf,KAAM,GACJ,KAAK,EAAE,MAAM,EACb,MAAM,EAAE,KAAK,EACb,gBAAgB,EAAC,GAAG;;ACKtB,IAAK,GACH,WAAW,ECTM,oBAAoB",
+"sources": ["sass/partials/_usershow.scss","sass/partials/_navbar.scss","sass/style.scss","sass/_variables.scss"],
 "names": [],
 "file": "style.css"
 }
