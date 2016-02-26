@@ -29,6 +29,20 @@
 .thumbnailnew {
   margin: 10px;
   height: 168px;
+    span {
+      color: #000;
+      font-weight: bold;
+      display: block;
+      margin-top: 0.41666666666666663em;
+      margin-left: 55px;
+    }
+  }
+
+.imagenew {
+  width: 11.3em;
+  height: 9.333333333333332em;
+  margin-top: -8px;
+  margin-left: 9px;
   background-image: url("/images/noun_40980_cc.jpg");
   background-size: cover;
 }

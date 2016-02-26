@@ -5,18 +5,22 @@
           <div class="pure-u-1-6"> 
             <a style="display:block" href="/folders/new">
               <div class="thumbnailnew">
+              <div class="imagenew"></div>
+              <span> Add a folder </span>
               </div>
               </a>
             </div>
             <% if @user.folders.count > 0 %>
              <% @user.folders.each do |folder| %>
               <div class="pure-u-1-6"> 
+              <a href="/folders/<%= folder.id %>">
                  <div class="thumbnail">
                  <div class="colorstyle" style="background-color:<%= colors[folder.id%15] %>"></div>
-                  <span><a href="/folders/<%= folder.id %>"><%= folder.title %></a></span>
+                  <span><%= folder.title %></span>
                    
                      </div>
                   </div>
+                  </a>
                 <% end %>
               <% end %>
       </div>
