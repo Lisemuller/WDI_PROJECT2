@@ -39,18 +39,16 @@ CarrierWave.configure do |config|
   config.fog_credentials = {
     provider: 'AWS',
     aws_access_key_id: ENV['AWS_ACCESS_KEY'],
-    aws_secret_access_key_id: ENV['AWS_SECRET_KEY'],
+    aws_secret_access_key: ENV['AWS_SECRET_KEY'],
     region: 'eu-west-1'
   }
 
   if development?
     config.storage = :file
-    config.enable_processing = false
-    config.root = "#{APP_ROOT}/tmp"
+    config.enable_processing = true
+    config.root = "#{APP_ROOT}/public/"
   else
     config.storage = :fog
+    config.fog_directory = ENV['AWS_BUCKET_NAME']
   end
-
-  config.cache_dir = "#{APP_ROOT}/tmp/uploads"
-  config.fog_directory = ENV['AWS_BUCKET_NAME']
 end
