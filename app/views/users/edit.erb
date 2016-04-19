@@ -1,20 +1,15 @@
-<!-- to change your image for instance --> 
-<!-- Show on an other page -->
 
-<h1>Users Edit</h1>
-
-<%= @user.username %>
 
 <h2>Edit Profile</h2>
 <form id="edit" method="post" action="/users/<%= current_user.id %>" enctype="multipart/form-data">
   <input type="hidden" name="_method" value="put">
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input name="user[username]" type="text" class="form-control" id="username" placeholder="Username" value="<%= @user.username %>">
-  </div>
- <div class="form-group">
-   <label for="profile_pic">Profile Pic</label>
-   <input name="user[profile_pic]" type="file" class="form-control" id="profile_pic" placeholder="Profile Pic" value="<%= @user.profile_pic %>" >
- </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input name="user[username]" type="text" class="form-control" id="username" placeholder="Username" value="<%= @user.username %>">
+    </div>
+    <div class="form-group">
+      <label for="profile_pic">Profile Pic</label>
+      <input name="user[profile_pic]" type="file" class="form-control" id="profile_pic" placeholder="Profile Pic" value="<%= @user.profile_pic %>" >
+    </div>
    <button type="submit" class="btn btn-default">Edit</button>
  </form>

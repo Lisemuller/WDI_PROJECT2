@@ -1,26 +1,29 @@
-<!-- on folders page/ index  -->
-
-<!-- rajouter les links  -->
+<!-- The first loop show the name of the users that share the file -->
 <div class="listlink">
   <section class="post">
       <h2 class="post-title"><a href="/links/new?folder_id=<%= @folder.id %>">add a URL</a></h2>
       <h2 class="post-title">Shared between <% @folder.users.each do |user| %>
       <%=user.username%>
-      <%end%></h2>
+      <%end%>
+      </h2>
+
+      <!-- This form permits to select the user to share the folder  -->
       <div class="friend-form">
-      <form method="post" action="/folders/<%= @folder.id %>">
-          <div class="friend">
-            <select name="user_id" class="friend-select">
-              <% @allUsers.each do |user| %>
-                <option type="hidden" value="<%=user.username%>"></option>
-                <option value="<%=user.id%>"><%= user.username %></option>
-              <% end %>
-            </select>
-           <input type="submit" value="share with">
-           </div>
+        <form method="post" action="/folders/<%= @folder.id %>">
+            <div class="friend">
+              <select name="user_id" class="friend-select">
+                <% @allUsers.each do |user| %>
+                  <option type="hidden" value="<%=user.username%>"></option>
+                  <option value="<%=user.id%>"><%= user.username %></option>
+                <% end %>
+              </select>
+              <input type="submit" value="share with">
+             </div>
         </form>
       </div>
   </section>
+
+  <!-- This section shows all the links  -->
   <h1 class="content-subhead">All the Links</h1>
   <% @folder.links.each do |link| %>
     <div class="post">

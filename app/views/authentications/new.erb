@@ -1,28 +1,29 @@
+<!-- form to register - Use of carrierwave to upload images -->
 
 <div class="divscreen">
   <div class="suscribe">
-  <form class="pure-form pure-form-aligned" method="post" action="/register" enctype="multipart/form-data">
-    <fieldset>
-      <div class="pure-control-group1">
-        <input id="name" type="text" placeholder="Username" name="user[username]" autofocus>
-      </div>
+    <form class="pure-form pure-form-aligned" method="post" action="/register" enctype="multipart/form-data">
+      <fieldset>
+        <div class="pure-control-group1">
+          <input id="name" type="text" placeholder="Username" name="user[username]" autofocus>
+        </div>
 
-      <div class="pure-control-group2">
-        <input id="email" type="text" placeholder="Email" name="user[email]" autofocus>
-      </div>
+        <div class="pure-control-group2">
+          <input id="email" type="text" placeholder="Email" name="user[email]" autofocus>
+        </div>
 
-      <div class="pure-control-group3">
-        <input id="password" type="password" placeholder="Password" name="user[password]">
-      </div>
+        <div class="pure-control-group3">
+          <input id="password" type="password" placeholder="Password" name="user[password]">
+        </div>
 
-      <div class="ola">
-        <input id="profilepic" type="file" placeholder="Profile picture" name="user[profile_pic]">
-      </div>
-    
-    <div class="oli">
-      <button type="submit" class="pure-button pure-button-primary">Sign up</button>
-    </div>
-    </fieldset>
-  </form>
+        <div class="ola">
+          <input id="profilepic" type="file" placeholder="Profile picture" name="user[profile_pic]">
+        </div>
+      
+        <div class="oli">
+          <button type="submit" class="pure-button pure-button-primary">Sign up</button>
+        </div>
+      </fieldset>
+    </form>
   </div>
 </div>
